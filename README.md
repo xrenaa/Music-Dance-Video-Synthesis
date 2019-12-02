@@ -2,6 +2,6 @@
 
 Pytorch implementation for the paper:
 
-The demo video is shown at: https://youtu.be/vCXpfUWRY_g
+The demo video is shown at: https://youtu.be/E8tgBFE6pEA
 
 code and data will come soon.
