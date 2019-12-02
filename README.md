@@ -22,13 +22,15 @@ https://drive.google.com/file/d/1o79F2F7-dZ7Cvpzf6hsVMwvfNg9LM3_K/view?usp=shari
 The noisy part(20 videos):
 https://drive.google.com/file/d/1pZ3JszX7393dQwm6x6bxxbiKb0wLIJGE/view?usp=sharing
 
-To use the dataset, please refer the notebook "dataset/usage_dataset.ipy"
+To use the dataset, please refer the notebook "dataset/usage_dataset.ipynb"
 
 To support further study, we also provide other collected data which is not used in the paper(limit to time),
 
 Ballet:
+https://drive.google.com/open?id=1NR6S20EI1C37fsDhaNkRI_P1MLT9Ox7u
 
 Popping:
+https://drive.google.com/file/d/1oLIxtczDZBvPdCAk8wuiI9b4FsnCItMG/view?usp=sharing
 
 Boy_kpop:
 https://drive.google.com/file/d/14-kEdudvaGLSapAr4prp4D67wzyACVQt/view?usp=sharing
