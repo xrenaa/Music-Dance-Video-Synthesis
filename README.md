@@ -6,10 +6,10 @@ The demo video is shown at: https://youtu.be/E8tgBFE6pEA
 
 code and data will come soon.
 
-#Some Demo:
+# Some Demo:
 
 
-#Dataset:
+# Dataset:
 As state in the paper, we collect 60 videos in total, and divide them into 2 part according to the cleaness of the skeletons.
 
 The clean part(40 videos):
