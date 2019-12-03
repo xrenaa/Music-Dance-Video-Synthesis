@@ -36,7 +36,7 @@ Boy_kpop:
 https://drive.google.com/file/d/14-kEdudvaGLSapAr4prp4D67wzyACVQt/view?usp=sharing
 
 Besides, we also provide the BaiduNetDisk version:
-
+https://pan.baidu.com/s/15wLkdPnlZiCxgnPv51hgpg
 (includes all the dataset)
 
 
