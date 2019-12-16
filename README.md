@@ -1,10 +1,10 @@
 ## Music-oriented Dance Video Synthesis with Pose Perceptual Loss
 
-Pytorch implementation for the paper:
+Pytorch implementation for the paper: https://arxiv.org/abs/1912.06606
 
 The demo video is shown at: https://youtu.be/E8tgBFE6pEA
 
-This repo is under construction and the code and data will come soon.
+This repo is under construction and the code will come soon.
 
 ### Some Demo:
 ![](demo/demo_0.gif)![](demo/demo_2.gif)
@@ -38,6 +38,10 @@ https://drive.google.com/file/d/14-kEdudvaGLSapAr4prp4D67wzyACVQt/view?usp=shari
 Besides, we also provide the BaiduNetDisk version:
 https://pan.baidu.com/s/15wLkdPnlZiCxgnPv51hgpg
 (includes all the dataset)
+
+### Usage:
+*coming soon* 
+
 
 
 
