@@ -2,7 +2,7 @@
 
 Pytorch implementation for the paper: https://arxiv.org/abs/1912.06606
 
-The demo video is shown at: https://youtu.be/E8tgBFE6pEA
+The demo video is shown at: https://youtu.be/0rMuFMZa_K4
 
 This repo is under construction and the code will come soon.
 
