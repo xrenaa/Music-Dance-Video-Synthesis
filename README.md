@@ -16,7 +16,9 @@ More samples can be seen in [demo video](https://youtu.be/0rMuFMZa_K4).
 
 ### Requirement:
 python 3.5 + pytorch 1.0
+
 For the Testing part, you should install ffmpeg for music video.
+
 We use tensorboardX for logging. If you don't install it, you can just comment the line in train.py.
 
 
