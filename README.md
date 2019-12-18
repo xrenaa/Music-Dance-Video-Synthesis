@@ -20,7 +20,6 @@ This training process is intended for the clean part dataset, which could be dow
 
 2. Run
 ```python
-s = "Python syntax highlighting"
 python train.py
 ```
 training script will load config of config.py
@@ -28,13 +27,12 @@ training script will load config of config.py
 ### Testing
 Run
 ```python
-s = "Python syntax highlighting"
-python get_demo.py
+python get_demo.py --output *the_output_path*
 ```
 
 ### Metrics
 
-For the proposed cross-modal metric, we re-implement the paper: Human Motion Analysis with Deep Metric Learning (ECCV 2018).
+For the proposed cross-modal metric in our paper, we re-implement the paper: Human Motion Analysis with Deep Metric Learning (ECCV 2018).
 
 The implementation of this paper can be seen at: https://github.com/xrenaa/Human-Motion-Analysis-with-Deep-Metric-Learning
 
