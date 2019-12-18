@@ -16,6 +16,7 @@ copy_dir="$( printf "%s/videos" $frame_dir )"
 
 mkdir "$copy_dir"
 
+#how many video you want to generate, the max of this variable is the numbers of the output folder
 max=35
 
 for (( i=0; i <= $max; ++i ))
