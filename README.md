@@ -1,16 +1,42 @@
 ## Music-oriented Dance Video Synthesis with Pose Perceptual Loss
 
-Pytorch implementation for the paper: https://arxiv.org/abs/1912.06606
+Pytorch implementation for this paper by Xuanchi Ren, Haoran Li, Zijian Huang, [Qifeng Chen](https://cqf.io/)
+
+[Paper](https://arxiv.org/abs/1912.06606)
 
 The demo video is shown at: https://youtu.be/0rMuFMZa_K4
 
-This repo is under construction and the code will come soon.
+The code for training and test is released. And the instrution on dataset is still under construction.
 
 ### Some Demo:
 ![](demo/demo_0.gif)![](demo/demo_2.gif)
 ![](demo/label_0.gif)![](demo/label_1.gif)
 
-More samples can be seen in demo video.
+More samples can be seen in [demo video](https://youtu.be/0rMuFMZa_K4).
+
+### Training:
+This training process is intended for the clean part dataset, which could be downloaded [here](https://drive.google.com/file/d/1o79F2F7-dZ7Cvpzf6hsVMwvfNg9LM3_K/view?usp=sharing).
+1. Download the dataset and put it under ./dataset
+
+2. Run
+```python
+s = "Python syntax highlighting"
+python train.py
+```
+training script will load config of config.py
+
+### Testing
+Run
+```python
+s = "Python syntax highlighting"
+python get_demo.py
+```
+
+### Metrics
+
+For the proposed cross-modal metric, we re-implement the paper: Human Motion Analysis with Deep Metric Learning (ECCV 2018).
+
+The implementation of this paper can be seen at: https://github.com/xrenaa/Human-Motion-Analysis-with-Deep-Metric-Learning
 
 
 ### Dataset:
@@ -38,10 +64,4 @@ https://drive.google.com/file/d/14-kEdudvaGLSapAr4prp4D67wzyACVQt/view?usp=shari
 Besides, we also provide the BaiduNetDisk version:
 https://pan.baidu.com/s/15wLkdPnlZiCxgnPv51hgpg
 (includes all the dataset)
-
-### Usage:
-*coming soon* 
-
-
-
 
