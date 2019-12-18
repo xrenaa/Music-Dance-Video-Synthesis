@@ -85,7 +85,6 @@ class Encoder(nn.Module):
         for i in range(len(self.strides)):
             x = self.cl[i](x)
             x = self.activations[i](x)
-            print(x.shape)
 
         return x.squeeze()
     

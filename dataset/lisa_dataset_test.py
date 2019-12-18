@@ -11,28 +11,14 @@ import json
 
 class DanceDataset(torch.utils.data.Dataset):
     def __init__(self,
-             file_location="/mnt/external4/xuanchi/korean_small_dataset/kpop_sequence/lisa_revised_pose_pairs.json",
-             classes=256,
-             mono=True,
-             dtype=np.uint8,
+             file_location,
              train=True):
-
-        #           |----receptive_field----|
-        #                                 |--output_length--|
-        # example:  | | | | | | | | | | | | | | | | | | | | |
-        # target:                           | | | | | | | | | |
-
-        self.classes = classes
-
-        self.mono = mono
-        self.dtype = dtype
 
         pose_dict_boy=read_from_json(file_location)
         
         length=0
         keys=['047','049']
         for key in keys:
-            #index = str("%03d" % i)
             sub_keys=sorted(pose_dict_boy[str(key)].keys())
             for sub_key in sub_keys:
                 temp_pose=np.array(pose_dict_boy[str(key)][str(sub_key)]["joint_coors"])
@@ -47,7 +33,6 @@ class DanceDataset(torch.utils.data.Dataset):
         label=torch.FloatTensor(2*length,50,18,2).zero_()
         index=0
        
-        #keys=["017","018"]
         for key in keys:
             #index = str("%03d" % i)
             sub_keys=sorted(pose_dict_boy[str(key)].keys())

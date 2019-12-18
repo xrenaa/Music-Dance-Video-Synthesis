@@ -6,9 +6,6 @@ from model.audio_encoder import RNN
 
     
 # use standard conv-relu-pool approach
-'''
-haoran modified version
-'''
 class res_linear_layer(nn.Module):
     
     def __init__(self, linear_hidden = 1024,time=1024):

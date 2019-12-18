@@ -5,41 +5,25 @@ import threading
 import torch
 import torch.utils.data
 import numpy as np
-#import librosa as lr
 import bisect
 import json
 
 class DanceDataset(torch.utils.data.Dataset):
-    def __init__(self,
-             file_location="/mnt/external4/xuanchi/korean_small_dataset/kpop_sequence/lisa_revised_pose_pairs.json",
-             classes=256,
-             mono=True,
-             dtype=np.uint8,
-             train=True):
-
-        #           |----receptive_field----|
-        #                                 |--output_length--|
-        # example:  | | | | | | | | | | | | | | | | | | | | |
-        # target:                           | | | | | | | | | |
-
-        self.classes = classes
-
-        self.mono = mono
-        self.dtype = dtype
-
-        pose_dict_boy=read_from_json(file_location)
+    def __init__(self, opt, train=True):
+        file_location=opt.data
+        pose_dict=read_from_json(file_location)
         
         length=0
-        keys=sorted(pose_dict_boy.keys())
+        keys=sorted(pose_dict.keys())
         for key in keys:
             #index = str("%03d" % i)
-            sub_keys=sorted(pose_dict_boy[str(key)].keys())
+            sub_keys=sorted(pose_dict[str(key)].keys())
             if key=="046":
                 break
             for sub_key in sub_keys:
-                temp_pose=np.array(pose_dict_boy[str(key)][str(sub_key)]["joint_coors"])
+                temp_pose=np.array(pose_dict[str(key)][str(sub_key)]["joint_coors"])
                 if(temp_pose.shape==(100,)):
-                    print("boy"+key+" "+sub_key+" is wrong")
+                    print("girl"+key+" "+sub_key+" is wrong")
                     continue
                 length+=1
         self.length=2*length
@@ -49,20 +33,19 @@ class DanceDataset(torch.utils.data.Dataset):
         label=torch.FloatTensor(2*length,50,18,2).zero_()
         index=0
         
-        keys=sorted(pose_dict_boy.keys())
+        keys=sorted(pose_dict.keys())
         #keys=["017","018"]
         for key in keys:
             #index = str("%03d" % i)
-            sub_keys=sorted(pose_dict_boy[str(key)].keys())
+            sub_keys=sorted(pose_dict[str(key)].keys())
             if key=="046":
                 break
             for sub_key in sub_keys:
-#                 if key=="006" :
-#                      break
+
                 print(key+" "+sub_key)
-                temp_audio=np.array(pose_dict_boy[str(key)][str(sub_key)]['audio_sequence'])
+                temp_audio=np.array(pose_dict[str(key)][str(sub_key)]['audio_sequence'])
                 
-                temp_pose=np.array(pose_dict_boy[str(key)][str(sub_key)]["joint_coors"])
+                temp_pose=np.array(pose_dict[str(key)][str(sub_key)]["joint_coors"])
                 if(temp_pose.shape==(100,)):
                     continue
                 x_coor=(temp_pose[:,:,0]/320)-1
@@ -98,9 +81,7 @@ class DanceDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         #print("idx:",idx)
         one_hot=self.audio[idx]
-        target=self.label[idx]
-        #audio=self.audio_label[idx]
-        #target=(pose,audio)                     
+        target=self.label[idx]          
         return one_hot, target
 
     def __len__(self):

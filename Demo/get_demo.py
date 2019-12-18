@@ -3,7 +3,6 @@ sys.path.append("../")
 import torch
 import torch.nn as nn
 import numpy as np
-#from model.frameD import frame_discriminator#(50,3,360,640)
 from model.pose_generator_norm import Generator#input 50,1,1600
 from dataset.small_dataset import DanceDataset #audio input 50*1*1600
 from torch.utils.data import DataLoader
@@ -12,7 +11,6 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 from torchvision.utils import save_image
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = "8"
 import numpy as np
 import math
 import itertools
