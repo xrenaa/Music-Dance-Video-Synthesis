@@ -37,12 +37,17 @@ training script will load config of config.py. If you want to train the model on
 ```
 python get_demo.py --output the_output_path
 ```
-2. Make the output to music video
+2. Make the output skeleton sequence to music video
 ```
 cd Demo
 ./frame2vid.sh
 ```
 Note that you should change the paths and the "max" variable in frame2vid.sh.
+
+### Pose2Vid
+For this part, we adapt the method of the paper "Everybody dance now".
+
+And We use this pytorch [implementation](https://github.com/CUHKSZ-TQL/EverybodyDanceNow_reproduce_pytorch).
 
 ### Metrics
 
