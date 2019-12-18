@@ -6,7 +6,7 @@ Pytorch implementation for this paper by Xuanchi Ren, Haoran Li, Zijian Huang, [
 
 The demo video is shown at: https://youtu.be/0rMuFMZa_K4
 
-The code for training and test is released. And the instrution on dataset is still under construction.
+The dataset and the code for training and test is released. And the instrution on dataset is still under construction.
 
 ### Some Demo:
 ![](demo/demo_0.gif)![](demo/demo_2.gif)
