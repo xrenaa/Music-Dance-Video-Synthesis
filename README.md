@@ -14,6 +14,12 @@ The code for training and test is released. And the instrution on dataset is sti
 
 More samples can be seen in [demo video](https://youtu.be/0rMuFMZa_K4).
 
+### Requirement:
+python 3.5 + pytorch 1.0
+For the Testing part, you should install ffmpeg for music video.
+We use tensorboardX for logging. If you don't install it, you can just comment the line in train.py.
+
+
 ### Training:
 This training process is intended for the clean part dataset, which could be downloaded [here](https://drive.google.com/file/d/1o79F2F7-dZ7Cvpzf6hsVMwvfNg9LM3_K/view?usp=sharing).
 1. Download the dataset and put it under ./dataset
@@ -22,13 +28,19 @@ This training process is intended for the clean part dataset, which could be dow
 ```python
 python train.py
 ```
-training script will load config of config.py
+training script will load config of config.py. If you want to train the model on other datasets, you should change the config in config.py.
 
 ### Testing
-Run
+1. Run
 ```
 python get_demo.py --output the_output_path
 ```
+2. Make the output to music video
+```
+cd Demo
+./frame2vid.sh
+```
+Note that you should change the paths and the "max" variable in frame2vid.sh.
 
 ### Metrics
 
