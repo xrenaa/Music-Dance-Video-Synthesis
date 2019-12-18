@@ -32,7 +32,7 @@ python train.py
 ```
 training script will load config of config.py. If you want to train the model on other datasets, you should change the config in config.py.
 
-### Testing
+### Testing:
 1. Run
 ```
 python get_demo.py --output the_output_path
@@ -44,12 +44,12 @@ cd Demo
 ```
 Note that you should change the paths and the "max" variable in frame2vid.sh.
 
-### Pose2Vid
+### Pose2Vid:
 For this part, we adapt the method of the paper "Everybody dance now".
 
 And We use this pytorch [implementation](https://github.com/CUHKSZ-TQL/EverybodyDanceNow_reproduce_pytorch).
 
-### Metrics
+### Metrics:
 
 For the proposed cross-modal metric in our paper, we re-implement the paper: Human Motion Analysis with Deep Metric Learning (ECCV 2018).
 
