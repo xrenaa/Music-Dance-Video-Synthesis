@@ -26,7 +26,7 @@ training script will load config of config.py
 
 ### Testing
 Run
-```python
+```
 python get_demo.py --output the_output_path
 ```
 
