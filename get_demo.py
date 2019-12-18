@@ -26,7 +26,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument(
         "--model",
-        default="./log/test/generator_0050.pth",
+        default="./log/test/generator_0400.pth",
         metavar="FILE",
         help="path to pth file",
         type=str
