@@ -33,7 +33,7 @@ python train.py
 training script will load config of config.py. If you want to train the model on other datasets, you should change the config in config.py.
 
 ### Testing:
-If you want to use the pretrained model, you can change the path of get_demo.py to "./pretrain_model/generator_0400.pth".
+If you want to use the pretrained model, you can firstly download it from [here](https://drive.google.com/file/d/1NFDD9wbwx-BAIss89Bck2xfxKmD7Z8Rb/view?usp=sharing), put it under "pretrain_model" and change the path of get_demo.py to "./pretrain_model/generator_0400.pth".
 1. Run
 ```
 python get_demo.py --output the_output_path
