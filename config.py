@@ -14,7 +14,7 @@ def get_arguments():
 
     #optimization hyper parameters:
     parser.add_argument('--niter', type=int, default=400, help='number of epochs to train')
-    parser.add_argument('--batch_size', type=int, default=64, help='batch_size')
+    parser.add_argument('--batch_size', type=int, default=16, help='batch_size')
     parser.add_argument('--lr_g', type=float, default=0.0003, help='learning rate')
     parser.add_argument('--gap',help='train n iter if D while train 1 iter of G',default=1)
     parser.add_argument('--lr_d_frame', type=float, default=0.0002, help='learning rate')
