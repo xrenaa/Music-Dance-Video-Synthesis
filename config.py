@@ -17,7 +17,7 @@ def get_arguments():
     parser.add_argument('--batch_size', type=int, default=16, help='batch_size')
     parser.add_argument('--lr_g', type=float, default=0.0003, help='learning rate')
     parser.add_argument('--gap',help='train n iter if D while train 1 iter of G',default=1)
-    parser.add_argument('--lr_d_frame', type=float, default=0.0002, help='learning rate')
+    parser.add_argument('--lr_d_frame', type=float, default=0.0003, help='learning rate')
     parser.add_argument('--lr_d_seq', type=float, default=0.0005, help='learning rate')
     parser.add_argument('--lambda_grad',type=float, help='gradient penelty weight',default=1)
     parser.add_argument('--alpha',type=float, help='reconstruction loss weight',default=200)
