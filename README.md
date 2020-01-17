@@ -58,6 +58,8 @@ The implementation of this paper can be seen at: https://github.com/xrenaa/Human
 
 
 ### Dataset:
+To use the dataset, please refer the notebook "dataset/usage_dataset.ipynb"
+
 As state in the paper, we collect 60 videos in total, and divide them into 2 part according to the cleaness of the skeletons.
 
 The clean part(40 videos):
@@ -65,8 +67,6 @@ https://drive.google.com/file/d/1o79F2F7-dZ7Cvpzf6hsVMwvfNg9LM3_K/view?usp=shari
 
 The noisy part(20 videos):
 https://drive.google.com/file/d/1pZ3JszX7393dQwm6x6bxxbiKb0wLIJGE/view?usp=sharing
-
-To use the dataset, please refer the notebook "dataset/usage_dataset.ipynb"
 
 To support further study, we also provide other collected data which is not used in the paper(limit to time),
 
