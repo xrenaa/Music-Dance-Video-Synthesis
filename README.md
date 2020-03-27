@@ -68,7 +68,7 @@ https://drive.google.com/file/d/1o79F2F7-dZ7Cvpzf6hsVMwvfNg9LM3_K/view?usp=shari
 The noisy part(20 videos):
 https://drive.google.com/file/d/1pZ3JszX7393dQwm6x6bxxbiKb0wLIJGE/view?usp=sharing
 
-To support further study, we also provide other collected data which is not used in the paper(limit to time),
+To support further study, we also provide other collected data:
 
 Ballet:
 https://drive.google.com/open?id=1NR6S20EI1C37fsDhaNkRI_P1MLT9Ox7u
