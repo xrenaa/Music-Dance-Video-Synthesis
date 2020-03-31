@@ -1,6 +1,6 @@
 ## Music-oriented Dance Video Synthesis with Pose Perceptual Loss
 
-Pytorch implementation for this paper by [Xuanchi Ren](xuanchiren.com), Haoran Li, Zijian Huang, [Qifeng Chen](https://cqf.io/)
+Pytorch implementation for this paper by [Xuanchi Ren](https://xuanchiren.com), Haoran Li, Zijian Huang, [Qifeng Chen](https://cqf.io/)
 
 [Paper](https://arxiv.org/abs/1912.06606)
 
