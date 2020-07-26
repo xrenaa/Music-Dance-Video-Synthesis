@@ -2,6 +2,8 @@
 
 Pytorch implementation for this paper by [Xuanchi Ren](https://xuanchiren.com), Haoran Li, Zijian Huang, [Qifeng Chen](https://cqf.io/)
 
+To appear in ACM MM 2020
+
 [Paper](https://arxiv.org/abs/1912.06606)
 
 The demo video is shown at: https://youtu.be/UNHv7uOUExU
