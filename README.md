@@ -1,10 +1,10 @@
-## Music-oriented Dance Video Synthesis with Pose Perceptual Loss
+## Self-supervised Dance Video Synthesis Conditioned on Music
 
 Pytorch implementation for this paper by [Xuanchi Ren](https://xuanchiren.com), Haoran Li, Zijian Huang, [Qifeng Chen](https://cqf.io/)
 
 [Paper](https://arxiv.org/abs/1912.06606)
 
-The demo video is shown at: https://youtu.be/0rMuFMZa_K4
+The demo video is shown at: https://youtu.be/UNHv7uOUExU
 
 The dataset and the code for training and test is released. And the instrution on dataset is still under construction.
 
