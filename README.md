@@ -8,7 +8,9 @@ To appear in ACM MM 2020
 
 The demo video is shown at: https://youtu.be/UNHv7uOUExU
 
-The dataset and the code for training and test is released. And the instrution on dataset is still under construction.
+The dataset and the code for training and test is released. 
+
+A notebook for demo and quick start will be provided soon.
 
 ### Some Demo:
 ![](demo/demo_0.gif)![](demo/demo_2.gif)
