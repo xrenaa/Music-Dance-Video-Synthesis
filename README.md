@@ -4,7 +4,8 @@ Pytorch implementation for this paper by [Xuanchi Ren](https://xuanchiren.com), 
 
 To appear in ACM MM 2020
 
-[Paper](https://arxiv.org/abs/1912.06606)
+[[Paper](https://arxiv.org/abs/1912.06606)]
+[[Paper_MM](https://xuanchiren.com/pub/Dance_MM_version.pdf)]
 
 The demo video is shown at: https://youtu.be/UNHv7uOUExU
 
