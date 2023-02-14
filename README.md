@@ -95,7 +95,7 @@ If you have questions for our work, please email to xrenaa@connect.ust.hk.
 If you use this code for your research, please cite our paper.
 ```
 @InProceedings{ren_mm_dance,
-author = {Xuanchi Ren, Haoran Li, Zijian Huang, Qifeng Chen},
+author  = {Ren, Xuanchi and Li, Haoran and Huang, Zijian and Chen, Qifeng},
 title = {Self-supervised Dance Video Synthesis Conditioned on Music},
 booktitle = {ACM MM},
 year = {2020}
